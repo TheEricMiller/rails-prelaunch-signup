@@ -112,16 +112,23 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_request (0.2.2)
+      rack-contrib
+      railties
     mime-types (1.21)
     multi_json (1.7.1)
+    mysql2 (0.3.11)
     nokogiri (1.5.9)
     orm_adapter (0.4.0)
+    pg (0.14.1)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-ssl (1.3.3)
       rack
     rack-test (0.6.2)
@@ -199,15 +206,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors (>= 0.7.2)
-  binding_of_caller (>= 0.7.1)
+  better_errors
+  binding_of_caller
   bootstrap-sass (>= 2.3.0.0)
   cancan (>= 1.6.9)
   capybara (>= 2.0.2)
   coffee-rails (~> 3.2.1)
   cucumber-rails (>= 1.3.1)
   database_cleaner (>= 1.0.0.RC1)
-  devise (>= 2.2.3)
+  devise
   email_spec (>= 1.4.0)
   factory_girl_rails (>= 4.2.0)
   figaro (>= 0.6.3)
@@ -217,7 +224,10 @@ DEPENDENCIES
   jquery-datatables-rails (>= 1.11.2)
   jquery-rails
   launchy (>= 2.2.0)
-  quiet_assets (>= 1.0.2)
+  meta_request
+  mysql2
+  pg
+  quiet_assets
   rails (= 3.2.13)
   rolify (>= 3.2.0)
   rspec-rails (>= 2.12.2)

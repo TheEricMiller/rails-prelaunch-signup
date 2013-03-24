@@ -18,3 +18,8 @@ puts 'user: ' << user.name
 user.add_role :admin
 user.skip_confirmation!
 user.save!
+
+case Rails.env
+when "development"
+	100.times {|i| User.create! :name => "User #{i+3}", :email => "user#{i+3}@test.com", :password => 'prITIplease', :password_confirmation => 'prITIplease'}
+end
